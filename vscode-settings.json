@@ -1,0 +1,136 @@
+{
+    "julia.symbolCacheDownload": true,
+    "workbench.colorTheme": "Gruvbox Material Dark",
+    "editor.fontFamily": "CaskaydiaCove Nerd Font",
+    "editor.fontLigatures": true,
+    "editor.fontWeight": "500",
+    "editor.matchBrackets": "never",
+    "editor.renderLineHighlight": "none",
+    "workbench.iconTheme": "Monokai Pro (Filter Ristretto) Icons",
+    "workbench.editor.untitled.hint": "hidden",
+    "workbench.startupEditor": "none",
+    "editor.lineNumbers": "relative",
+    "editor.tabSize": 4,
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": ["j", "j"],
+        "after": ["<Esc>"]
+      },
+      {
+        "before": ["j", "k"],
+        "after": ["<Esc>"]
+      }
+    ],
+    "vim.visualModeKeyBindings": [
+      {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        },
+    ],
+    "vim.normalModeKeyBindings": [
+      {
+        "before": ["<leader>", "d"],
+        "after": ["d", "d"]
+      },
+      {
+        "before": ["<leader>", "c"],
+        "commands": ["workbench.action.closeActiveEditor"]
+      },
+      {
+        "before": ["<S-l>"],
+        "commands": ["workbench.action.nextEditor"]
+      },  
+      { "before": ["<S-h>"],
+        "commands": ["workbench.action.previousEditor"]
+      },
+      {
+        "before": ["<C-n>"],
+        "commands": [":nohl"]
+      },
+      {
+        "before": ["<leader>", "e"],
+        "commands": ["workbench.view.explorer"]
+      },{
+        "before": ["<leader>", "b"],
+        "commands": ["workbench.action.toggleSidebarVisibility"]
+      },
+      {
+        "before": ["K"],
+        "commands": ["lineBreakInsert"],
+        "silent": true
+      }, 
+      {
+        "before": ["<leader>", "l"],
+        "after": ["$"]
+      },
+      {
+        "before": ["<leader>", "h"],
+        "after": ["^"]
+      },
+      {
+            "before": ["leader", "w"],
+            "commands": [
+                "workbench.action.files.save",
+            ]
+        }
+      
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+      "<C-a>": false,
+      "<C-f>": false
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.codeLens": false,
+    "csharp.referencesCodeLens.enabled": false,
+    "csharp.testsCodeLens.enabled": false,
+    "Lua.telemetry.enable": true,
+    "breadcrumbs.enabled": false,
+    "editor.rename.enablePreview": false,
+    "workbench.list.smoothScrolling": true,
+    "editor.cursorBlinking": "phase",
+    "editor.cursorSmoothCaretAnimation": true,
+    "window.menuBarVisibility": "compact",
+    "editor.minimap.enabled": false,
+    "editor.tokenColorCustomizations": {
+
+    "[Tokyo Night]": {
+      "textMateRules": [{
+            "scope": [
+                "comment",
+                "meta.var.expr storage.type",
+                "keyword.control.flow",
+                "keyword.control.return",
+                "meta.directive.vue punctuation.separator.key-value.html",
+                "meta.directive.vue entity.other.attribute-name.html",
+                "tag.decorator.js entity.name.tag.js",
+                "tag.decorator.js punctuation.definition.tag.js",
+                "storage.modifier"
+            ],
+            "settings": {
+                "fontStyle": ""
+            }
+        }]
+    }
+    },
+    "workbench.activityBar.visible": false
+    
+    
+}
