@@ -1,136 +1,209 @@
 {
-    "julia.symbolCacheDownload": true,
-    "workbench.colorTheme": "Gruvbox Material Dark",
-    "editor.fontFamily": "CaskaydiaCove Nerd Font",
-    "editor.fontLigatures": true,
-    "editor.fontWeight": "500",
-    "editor.matchBrackets": "never",
-    "editor.renderLineHighlight": "none",
-    "workbench.iconTheme": "Monokai Pro (Filter Ristretto) Icons",
-    "workbench.editor.untitled.hint": "hidden",
-    "workbench.startupEditor": "none",
-    "editor.lineNumbers": "relative",
-    "editor.tabSize": 4,
-    "vim.easymotion": true,
-    "vim.incsearch": true,
-    "vim.useSystemClipboard": true,
-    "vim.useCtrlKeys": true,
-    "vim.hlsearch": true,
-    "vim.insertModeKeyBindings": [
+  "editor.fontFamily": "CaskaydiaCove Nerd Font",
+  "editor.fontLigatures": true,
+  "editor.fontWeight": "350",
+  "editor.fontSize": 13,
+  "editor.renderLineHighlight": "none",
+  "workbench.editor.untitled.hint": "hidden",
+  "workbench.startupEditor": "none",
+  "editor.lineNumbers": "relative",
+  "editor.tabSize": 4,
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    },
+    {
+      "before": [
+        "j",
+        "k"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [
+        ">"
+      ],
+      "commands": [
+        "editor.action.indentLines"
+      ]
+    },
+    {
+      "before": [
+        "<"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
+      ]
+    },
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "<leader>",
+        "d"
+      ],
+      "after": [
+        "d",
+        "d"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "c"
+      ],
+      "commands": [
+        "workbench.action.closeActiveEditor"
+      ]
+    },
+    {
+      "before": [
+        "<C-n>"
+      ],
+      "commands": [
+        ":nohl"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "e"
+      ],
+      "commands": [
+        "workbench.view.explorer"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "b"
+      ],
+      "commands": [
+        "workbench.action.toggleSidebarVisibility"
+      ]
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "commands": [
+        "lineBreakInsert"
+      ],
+      "silent": true
+    },
+    {
+      "before": [
+        "<leader>",
+        "l"
+      ],
+      "after": [
+        "$"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "h"
+      ],
+      "after": [
+        "^"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "w"
+      ],
+      "commands": [
+        "workbench.action.files.save",
+      ]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.codeLens": false,
+  "csharp.referencesCodeLens.enabled": false,
+  "csharp.testsCodeLens.enabled": false,
+  "breadcrumbs.enabled": false,
+  "editor.rename.enablePreview": false,
+  "workbench.list.smoothScrolling": true,
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.minimap.enabled": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "terminal.integrated.gpuAcceleration": "off",
+  "workbench.colorTheme": "gruber-dark",
+  "editor.colorDecorators": false,
+  "editor.bracketPairColorization.enabled": false,
+  "editor.guides.bracketPairsHorizontal": false,
+  "editor.autoClosingBrackets": "always",
+  "workbench.colorCustomizations": {
+  //  "editor.background": "#072626",
+  //  "editor.selectionBackground": "#0F445B"
+  "[Gruber Lemon Dark 🍋]": {
+    "editor.background": "#1f212a"
+  },
+  "[Gruber Pear Dark 🍐]": {
+    "editor.background": "#1f212a"
+  }
+  },
+  
+  "editor.semanticTokenColorCustomizations": {
+    "[j_blow]": {
+      "enabled": true,
+      "rules": {
+        "method": "#d3b58d",
+        "class": "#81DA91",
+        //"namespace": "#86e088"
+        "keyword": "#c91313",
+        "field": "#b1ab8f",
+        "variable": "#d3b58d",
+        "local": "#b1ab8f",
+        "global": "#b1ab8f",
+        "struct": "#81DA91",
+        "parameter": "#b1ab8f",
+        "plainKeyword": "#b1ab8f",
+        "controlKeyword": "#EAF0E5",
+        "number": "#EAF0E5"
+      }
+    },
+    "[gruber-dark]": {
+      "enabled": true,
+      
+    }
+  },
+  "editor.letterSpacing": 0.5,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
       {
-        "before": ["j", "j"],
-        "after": ["<Esc>"]
-      },
-      {
-        "before": ["j", "k"],
-        "after": ["<Esc>"]
+        "scope": "entity.name.type, entity.name.class, entity.name.namespace, entity.name.scope-resolution",
+        "settings": {
+          "fontStyle": ""
+        }
       }
     ],
-    "vim.visualModeKeyBindings": [
-      {
-            "before": [
-                ">"
-            ],
-            "commands": [
-                "editor.action.indentLines"
-            ]
-        },
-        {
-            "before": [
-                "<"
-            ],
-            "commands": [
-                "editor.action.outdentLines"
-            ]
-        },
-    ],
-    "vim.normalModeKeyBindings": [
-      {
-        "before": ["<leader>", "d"],
-        "after": ["d", "d"]
-      },
-      {
-        "before": ["<leader>", "c"],
-        "commands": ["workbench.action.closeActiveEditor"]
-      },
-      {
-        "before": ["<S-l>"],
-        "commands": ["workbench.action.nextEditor"]
-      },  
-      { "before": ["<S-h>"],
-        "commands": ["workbench.action.previousEditor"]
-      },
-      {
-        "before": ["<C-n>"],
-        "commands": [":nohl"]
-      },
-      {
-        "before": ["<leader>", "e"],
-        "commands": ["workbench.view.explorer"]
-      },{
-        "before": ["<leader>", "b"],
-        "commands": ["workbench.action.toggleSidebarVisibility"]
-      },
-      {
-        "before": ["K"],
-        "commands": ["lineBreakInsert"],
-        "silent": true
-      }, 
-      {
-        "before": ["<leader>", "l"],
-        "after": ["$"]
-      },
-      {
-        "before": ["<leader>", "h"],
-        "after": ["^"]
-      },
-      {
-            "before": ["leader", "w"],
-            "commands": [
-                "workbench.action.files.save",
-            ]
-        }
-      
-    ],
-    "vim.leader": "<space>",
-    "vim.handleKeys": {
-      "<C-a>": false,
-      "<C-f>": false
-    },
-    "security.workspace.trust.untrustedFiles": "open",
-    "editor.codeLens": false,
-    "csharp.referencesCodeLens.enabled": false,
-    "csharp.testsCodeLens.enabled": false,
-    "Lua.telemetry.enable": true,
-    "breadcrumbs.enabled": false,
-    "editor.rename.enablePreview": false,
-    "workbench.list.smoothScrolling": true,
-    "editor.cursorBlinking": "phase",
-    "editor.cursorSmoothCaretAnimation": true,
-    "window.menuBarVisibility": "compact",
-    "editor.minimap.enabled": false,
-    "editor.tokenColorCustomizations": {
-
-    "[Tokyo Night]": {
-      "textMateRules": [{
-            "scope": [
-                "comment",
-                "meta.var.expr storage.type",
-                "keyword.control.flow",
-                "keyword.control.return",
-                "meta.directive.vue punctuation.separator.key-value.html",
-                "meta.directive.vue entity.other.attribute-name.html",
-                "tag.decorator.js entity.name.tag.js",
-                "tag.decorator.js punctuation.definition.tag.js",
-                "storage.modifier"
-            ],
-            "settings": {
-                "fontStyle": ""
-            }
-        }]
-    }
-    },
-    "workbench.activityBar.visible": false
-    
-    
+  },
+  "editor.guides.indentation": false,
+  "editor.cursorSurroundingLines": 5,
+  "editor.guides.highlightActiveBracketPair": false
+  
 }
