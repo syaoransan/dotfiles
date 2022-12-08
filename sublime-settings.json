@@ -1,0 +1,32 @@
+{
+	"font_face" : "Hack Nerd Font", 
+	"font_size": 11,
+	"font_options" : [
+		"no_italic",
+		"no_bold"
+	],
+	"scroll_speed" : 1.0,
+	"ignored_packages":
+	[
+		"Six",
+		"Vintage",
+		"Vintageous",
+	],
+	"color_scheme": "Gruvbox Material Dark.sublime-color-scheme",
+	"theme": "One.sublime-theme",
+	"vintageous_enable_snake": true,
+	"vintageous_i_escape_jj": true,
+	"vintageous_i_escape_jk": true,
+	"neovintageous_build_version": 12700,
+	"caret_style" : "blink",
+	"block_caret" : true,
+	"caret_extra_top": 1,
+	"caret_extra_bottom": 1,
+	"caret_extra_width": 1,
+	"highlight_line" : true,
+	"highlight_line_number" : true,
+	"highlight_gutter" : true,
+
+
+
+}
