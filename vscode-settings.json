@@ -1,209 +1,162 @@
 {
-  "editor.fontFamily": "CaskaydiaCove Nerd Font",
-  "editor.fontLigatures": true,
-  "editor.fontWeight": "350",
-  "editor.fontSize": 13,
-  "editor.renderLineHighlight": "none",
-  "workbench.editor.untitled.hint": "hidden",
-  "workbench.startupEditor": "none",
-  "editor.lineNumbers": "relative",
-  "editor.tabSize": 4,
-  "vim.easymotion": true,
-  "vim.incsearch": true,
-  "vim.useSystemClipboard": true,
-  "vim.useCtrlKeys": true,
-  "vim.hlsearch": true,
-  "vim.insertModeKeyBindings": [
-    {
-      "before": [
-        "j",
-        "j"
-      ],
-      "after": [
-        "<Esc>"
-      ]
-    },
-    {
-      "before": [
-        "j",
-        "k"
-      ],
-      "after": [
-        "<Esc>"
-      ]
-    }
-  ],
-  "vim.visualModeKeyBindings": [
-    {
-      "before": [
-        ">"
-      ],
-      "commands": [
-        "editor.action.indentLines"
-      ]
-    },
-    {
-      "before": [
-        "<"
-      ],
-      "commands": [
-        "editor.action.outdentLines"
-      ]
-    },
-  ],
-  "vim.normalModeKeyBindings": [
-    {
-      "before": [
-        "<leader>",
-        "d"
-      ],
-      "after": [
-        "d",
-        "d"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "c"
-      ],
-      "commands": [
-        "workbench.action.closeActiveEditor"
-      ]
-    },
-    {
-      "before": [
-        "<C-n>"
-      ],
-      "commands": [
-        ":nohl"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "e"
-      ],
-      "commands": [
-        "workbench.view.explorer"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "b"
-      ],
-      "commands": [
-        "workbench.action.toggleSidebarVisibility"
-      ]
-    },
-    {
-      "before": [
-        "K"
-      ],
-      "commands": [
-        "lineBreakInsert"
-      ],
-      "silent": true
-    },
-    {
-      "before": [
-        "<leader>",
-        "l"
-      ],
-      "after": [
-        "$"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "h"
-      ],
-      "after": [
-        "^"
-      ]
-    },
-    {
-      "before": [
-        "leader",
-        "w"
-      ],
-      "commands": [
-        "workbench.action.files.save",
-      ]
-    }
-  ],
-  "vim.leader": "<space>",
-  "vim.handleKeys": {
-    "<C-a>": false,
-    "<C-f>": false
-  },
-  "security.workspace.trust.untrustedFiles": "open",
-  "editor.codeLens": false,
-  "csharp.referencesCodeLens.enabled": false,
-  "csharp.testsCodeLens.enabled": false,
-  "breadcrumbs.enabled": false,
-  "editor.rename.enablePreview": false,
-  "workbench.list.smoothScrolling": true,
-  "editor.cursorBlinking": "phase",
-  "editor.cursorSmoothCaretAnimation": true,
-  "editor.minimap.enabled": false,
-  "workbench.iconTheme": "material-icon-theme",
-  "terminal.integrated.gpuAcceleration": "off",
-  "workbench.colorTheme": "gruber-dark",
-  "editor.colorDecorators": false,
-  "editor.bracketPairColorization.enabled": false,
-  "editor.guides.bracketPairsHorizontal": false,
-  "editor.autoClosingBrackets": "always",
-  "workbench.colorCustomizations": {
-  //  "editor.background": "#072626",
-  //  "editor.selectionBackground": "#0F445B"
-  "[Gruber Lemon Dark 🍋]": {
-    "editor.background": "#1f212a"
-  },
-  "[Gruber Pear Dark 🍐]": {
-    "editor.background": "#1f212a"
-  }
-  },
-  
-  "editor.semanticTokenColorCustomizations": {
-    "[j_blow]": {
-      "enabled": true,
-      "rules": {
-        "method": "#d3b58d",
-        "class": "#81DA91",
-        //"namespace": "#86e088"
-        "keyword": "#c91313",
-        "field": "#b1ab8f",
-        "variable": "#d3b58d",
-        "local": "#b1ab8f",
-        "global": "#b1ab8f",
-        "struct": "#81DA91",
-        "parameter": "#b1ab8f",
-        "plainKeyword": "#b1ab8f",
-        "controlKeyword": "#EAF0E5",
-        "number": "#EAF0E5"
-      }
-    },
-    "[gruber-dark]": {
-      "enabled": true,
-      
-    }
-  },
-  "editor.letterSpacing": 0.5,
-  "editor.tokenColorCustomizations": {
-    "textMateRules": [
+    "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
+    "editor.fontLigatures": true,
+    "editor.fontWeight": "500",
+    "editor.fontSize": 14,
+    "editor.renderLineHighlight": "none",
+    "workbench.editor.untitled.hint": "hidden",
+    "workbench.startupEditor": "none",
+    "editor.lineNumbers": "relative",
+    "editor.tabSize": 4,
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
       {
-        "scope": "entity.name.type, entity.name.class, entity.name.namespace, entity.name.scope-resolution",
-        "settings": {
-          "fontStyle": ""
-        }
+        "before": [
+          "j",
+          "j"
+        ],
+        "after": [
+          "<Esc>"
+        ]
+      },
+      {
+        "before": [
+          "j",
+          "k"
+        ],
+        "after": [
+          "<Esc>"
+        ]
       }
     ],
-  },
-  "editor.guides.indentation": false,
-  "editor.cursorSurroundingLines": 5,
-  "editor.guides.highlightActiveBracketPair": false
-  
-}
+    "vim.visualModeKeyBindings": [
+      {
+        "before": [
+          ">"
+        ],
+        "commands": [
+          "editor.action.indentLines"
+        ]
+      },
+      {
+        "before": [
+          "<"
+        ],
+        "commands": [
+          "editor.action.outdentLines"
+        ]
+      },
+    ],
+    "vim.normalModeKeyBindings": [
+      {
+        "before": [
+          "<leader>",
+          "d"
+        ],
+        "after": [
+          "d",
+          "d"
+        ]
+      },
+      {
+        "before": [
+          "<leader>",
+          "c"
+        ],
+        "commands": [
+          "workbench.action.closeActiveEditor"
+        ]
+      },
+      {
+        "before": [
+          "<C-n>"
+        ],
+        "commands": [
+          ":nohl"
+        ]
+      },
+      {
+        "before": [
+          "<leader>",
+          "e"
+        ],
+        "commands": [
+          "workbench.view.explorer"
+        ]
+      },
+      {
+        "before": [
+          "<leader>",
+          "b"
+        ],
+        "commands": [
+          "workbench.action.toggleSidebarVisibility"
+        ]
+      },
+      {
+        "before": [
+          "K"
+        ],
+        "commands": [
+          "lineBreakInsert"
+        ],
+        "silent": true
+      },
+      {
+        "before": [
+          "<leader>",
+          "l"
+        ],
+        "after": [
+          "$"
+        ]
+      },
+      {
+        "before": [
+          "<leader>",
+          "h"
+        ],
+        "after": [
+          "^"
+        ]
+      },
+      {
+        "before": [
+          "leader",
+          "w"
+        ],
+        "commands": [
+          "workbench.action.files.save",
+        ]
+      }
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+      "<C-a>": false,
+      "<C-f>": false
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.codeLens": false,
+    "breadcrumbs.enabled": false,
+    "editor.rename.enablePreview": false,
+    "workbench.list.smoothScrolling": true,
+    "editor.cursorBlinking": "phase",
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.minimap.enabled": false,
+    "terminal.integrated.gpuAcceleration": "off",
+    "editor.colorDecorators": false,
+    "editor.bracketPairColorization.enabled": false,
+    "editor.guides.bracketPairsHorizontal": false,
+    "editor.autoClosingBrackets": "always",
+    "editor.letterSpacing": 0.5,
+    "editor.guides.indentation": false,
+    "editor.cursorSurroundingLines": 5,
+    "editor.guides.highlightActiveBracketPair": false,
+    "workbench.colorTheme": "One Dark Pro Flat",
+    "workbench.iconTheme": "material-icon-theme"
+    
+  }
