@@ -1,11 +1,10 @@
 add_newline = false
 
-format = '''[ san@syaoran: ](bold yellow)$all
+format = '''[san@syaoran: ](bold yellow)$all
 
 '''
 [character]
 success_symbol = '[⚡](bold yellow)[➜](bold green)'
-
 
 [battery]
 disabled = true
@@ -27,6 +26,7 @@ symbol = " "
 
 [directory]
 read_only = " "
+home_symbol = " "
 
 [docker_context]
 symbol = " "
