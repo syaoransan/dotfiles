@@ -1,162 +1,280 @@
 {
-    "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
-    "editor.fontLigatures": true,
-    "editor.fontWeight": "500",
+    "workbench.colorTheme": "Almondz",
+    "editor.fontFamily": "SauceCodePro Nerd Font Mono",
     "editor.fontSize": 14,
-    "editor.renderLineHighlight": "none",
-    "workbench.editor.untitled.hint": "hidden",
-    "workbench.startupEditor": "none",
-    "editor.lineNumbers": "relative",
-    "editor.tabSize": 4,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.cursorBlinking": "smooth",
+    "editor.smoothScrolling": true,
+    "workbench.list.smoothScrolling": true,
+    "terminal.integrated.smoothScrolling": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "breadcrumbs.enabled": false,
+    "editor.bracketPairColorization.enabled": false,
+    "editor.guides.bracketPairsHorizontal": true,
+    "editor.guides.indentation": false,
+    "editor.cursorSurroundingLines": 3,
+    "editor.minimap.enabled": false,
+    // Vim 
+    "vim.smartRelativeLine": true,
     "vim.easymotion": true,
     "vim.incsearch": true,
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
     "vim.hlsearch": true,
-    "vim.insertModeKeyBindings": [
-      {
-        "before": [
-          "j",
-          "j"
-        ],
-        "after": [
-          "<Esc>"
-        ]
-      },
-      {
-        "before": [
-          "j",
-          "k"
-        ],
-        "after": [
-          "<Esc>"
-        ]
-      }
+    "vim.leader": "<space>",
+    "vim.surround": true,
+    "vim.sneak": false,
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "g",
+                "n"
+            ],
+            "after": [
+                "g",
+                "t"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "p"
+            ],
+            "after": [
+                "g",
+                "T"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "e"
+            ],
+            "after": [
+                "G"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "b"
+            ],
+            "after": [
+                "L"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "t"
+            ],
+            "after": [
+                "H"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "c"
+            ],
+            "after": [
+                "M"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "l"
+            ],
+            "after": [
+                "$"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "h"
+            ],
+            "after": [
+                "^"
+            ]
+        },
+        {
+            "before": [
+                "<C-n>"
+            ],
+            "commands": [
+                ":nohl"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "n"
+            ],
+            "commands": [
+                "extension.advancedNewFile"
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "commands": [
+                "lineBreakInsert"
+            ],
+            "silent": true
+        },
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        },
+        // EasyMotion Remap
+        {
+            "before": [
+                "<leader>",
+                "s"
+            ],
+            "after": [
+                "<leader>",
+                "<leader>",
+                "s"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "f"
+            ],
+            "after": [
+                "<leader>",
+                "<leader>",
+                "f"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "F"
+            ],
+            "after": [
+                "<leader>",
+                "<leader>",
+                "F"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "w"
+            ],
+            "after": [
+                "<leader>",
+                "<leader>",
+                "w"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "b"
+            ],
+            "after": [
+                "<leader>",
+                "<leader>",
+                "b"
+            ]
+        }
     ],
     "vim.visualModeKeyBindings": [
-      {
-        "before": [
-          ">"
-        ],
-        "commands": [
-          "editor.action.indentLines"
-        ]
-      },
-      {
-        "before": [
-          "<"
-        ],
-        "commands": [
-          "editor.action.outdentLines"
-        ]
-      },
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        }
     ],
-    "vim.normalModeKeyBindings": [
-      {
-        "before": [
-          "<leader>",
-          "d"
-        ],
-        "after": [
-          "d",
-          "d"
-        ]
-      },
-      {
-        "before": [
-          "<leader>",
-          "c"
-        ],
-        "commands": [
-          "workbench.action.closeActiveEditor"
-        ]
-      },
-      {
-        "before": [
-          "<C-n>"
-        ],
-        "commands": [
-          ":nohl"
-        ]
-      },
-      {
-        "before": [
-          "<leader>",
-          "e"
-        ],
-        "commands": [
-          "workbench.view.explorer"
-        ]
-      },
-      {
-        "before": [
-          "<leader>",
-          "b"
-        ],
-        "commands": [
-          "workbench.action.toggleSidebarVisibility"
-        ]
-      },
-      {
-        "before": [
-          "K"
-        ],
-        "commands": [
-          "lineBreakInsert"
-        ],
-        "silent": true
-      },
-      {
-        "before": [
-          "<leader>",
-          "l"
-        ],
-        "after": [
-          "$"
-        ]
-      },
-      {
-        "before": [
-          "<leader>",
-          "h"
-        ],
-        "after": [
-          "^"
-        ]
-      },
-      {
-        "before": [
-          "leader",
-          "w"
-        ],
-        "commands": [
-          "workbench.action.files.save",
-        ]
-      }
-    ],
-    "vim.leader": "<space>",
-    "vim.handleKeys": {
-      "<C-a>": false,
-      "<C-f>": false
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.selectionHighlight": false,
+    "editor.renderLineHighlightOnlyWhenFocus": true,
+    "gopls": {
+        "ui.semanticTokens": true
     },
-    "security.workspace.trust.untrustedFiles": "open",
-    "editor.codeLens": false,
-    "breadcrumbs.enabled": false,
-    "editor.rename.enablePreview": false,
-    "workbench.list.smoothScrolling": true,
-    "editor.cursorBlinking": "phase",
-    "editor.cursorSmoothCaretAnimation": true,
-    "editor.minimap.enabled": false,
-    "terminal.integrated.gpuAcceleration": "off",
-    "editor.colorDecorators": false,
-    "editor.bracketPairColorization.enabled": false,
-    "editor.guides.bracketPairsHorizontal": false,
-    "editor.autoClosingBrackets": "always",
-    "editor.letterSpacing": 0.5,
-    "editor.guides.indentation": false,
-    "editor.cursorSurroundingLines": 5,
-    "editor.guides.highlightActiveBracketPair": false,
-    "workbench.colorTheme": "One Dark Pro Flat",
-    "workbench.iconTheme": "material-icon-theme"
-    
-  }
+    "editor.tokenColorCustomizations": {
+        "[Almondz]": {
+            "textMateRules": [
+                {
+                    "scope": "storage.type.built-in.primitive.c",
+                    "settings": {
+                        "foreground": "#ccd5ae"
+                    }
+                },
+                {
+                    "scope": "keyword.operator.assignment.c",
+                    "settings": {
+                        "foreground": "#D4BE98",
+                    }
+                },
+                {
+                    "scope": "keyword.operator.c",
+                    "settings": {
+                        "foreground": "#D4BE98",
+                    }
+                },
+                {
+                    "scope": "keyword.operator.decrement.c",
+                    "settings": {
+                        "foreground": "#D4BE98",
+                    }
+                },
+                {
+                    "scope": "keyword.operator.increment.c",
+                    "settings": {
+                        "foreground": "#D4BE98",
+                    }
+                },
+                {
+                    "scope": "keyword.operator.comparison.c",
+                    "settings": {
+                        "foreground": "#D4BE98",
+                    }
+                },
+            ]
+        }
+    },
+    "window.commandCenter": true,
+    "dotnet.server.useOmnisharp": true
+}
